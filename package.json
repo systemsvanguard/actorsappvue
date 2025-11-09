@@ -1,0 +1,44 @@
+{
+  "name": "actorsapp-vue",
+  "private": false,
+  "version": "0.0.0",
+  "description": "A Vue.js based demo and portfolio web app consuming a backend Movie Actors REST API.  Built with Vue.js, Vite, TypeScript, axios, JSON, Bootstrap v5 CSS framework, HTML5, Bootstrap icons, Google Fonts, JavaScript, and CSS.  Have fun.",
+  "author": "Ryan Hunter | GitHub handle: SystemsVanguard | Web: www.ryanhunter.org | Location: Toronto ON Canada",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "Vue.js",
+    "API",
+    "Axios",
+    "Bootstrap",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Vite",
+    "Bootstrap Icons"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "dayjs": "^1.11.19",
+    "vue": "^3.5.22",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^24.6.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7",
+    "vue-tsc": "^3.1.0"
+  }
+}
