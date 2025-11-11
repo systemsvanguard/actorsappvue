@@ -1,4 +1,3 @@
-// src/views/Home.vue
 <template>
     <div class="container py-2">
         <h1 class='my-1 text-primary'>Movie Actors App ~ Vue.js</h1>
@@ -24,17 +23,20 @@
 
         <div class="row">
             <div class="col-lg-4" v-for="actor in actors" :key="actor.id" style="max-width:400px">
-                <!-- Note2Self: Bootstrap is 12 column grid. | col-lg-4 for 3 columns. & col-lg-2 for 2 columns | Ensure to config the "style="width:350px" properly, for image size to look correct! -->
                 <div class="card mb-4">
-                    <img class="card-img-top" :alt="actor.first_name + ' ' + actor.last_name" :src="actor.picture">
+                    <img class="card-img-top" :alt="actor.first_name + ' ' + actor.last_name" :src="actor.picture"
+                        style="width: 11rem;">
                     <div class="card-body">
                         <h5 class="card-title">{{ actor.first_name }} {{ actor.last_name }}</h5>
                         <p class="card-text">
-                            <span class="fw-bold">Major Movie : </span>{{ actor.major_movie }} <br />
+                            <span class="fw-bold">Major Movie : </span><br /><span class="fw-bold text-primary">{{
+                                actor.major_movie }}</span> <br />
                             <span class="fw-bold"><i class="me-1 bi bi-telephone"></i> Phone : </span>{{ actor.phone }}
                             <br />
                             <span class="fw-bold"><i class="me-1 bi bi-envelope-at"></i> Email : </span>
-                            <a :href="`mailto:${actor.email}`">{{ actor.email }}</a>
+                            <a :href="`mailto:${actor.email}`"><br />
+                                <span class="small-email-text">{{ actor.email }}</span>
+                            </a>
                         </p>
                         <a target="_blank" :href="actor.wiki" class="btn btn-primary">
                             <i class="me-1 bi bi-wikipedia"></i> Wikipedia ...
