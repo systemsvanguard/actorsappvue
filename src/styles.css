@@ -1,0 +1,15 @@
+/* Portfolio site for fullstack developer Ryan Hunter | ryan@RyanHunter.ca | GitHub handle : SystemsVanguard  */
+.img4cards {
+    width: 11rem;
+    /* max-width: 350px; */
+    height: auto;
+}
+
+.card-email {
+    font-size: 0.30rem;
+}
+
+.small-email-text {
+    font-size: 0.7rem;
+    /* or 12px, 0.8em, etc. */ 
+}
